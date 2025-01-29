@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Cuaca</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="weather-container">
+        <!-- Logo di bagian atas -->
+        <img src="assets/Logo/Logo cuaca.png" alt="Logo cuaca" class="logo" />   
+
+        <h1>Dashboard Cuaca</h1>
+        <input type="text" id="city-input" placeholder="Masukkan nama kota" />
+        <button onclick="getWeather()">Dapatkan Cuaca</button>
+    </div>
+
+        <!-- Weather Information Section -->
+        <div id="info-container" class="info-container">
+        <h2>Informasi Cuaca untuk <span id="city-name"></span></h2>
+        <p><strong>Suhu:</strong> <span id="temp"></span>°C</p>
+        <p><strong>Kelembaban:</strong> <span id="humidity"></span>%</p>
+        <p><strong>Kondisi Cuaca:</strong> <span id="condition"></span></p>
+        <p><strong>Kecepatan Angin:</strong> <span id="wind"></span> m/s</p>
+        <p><strong>Tekanan Udara:</strong> <span id="pressure"></span> hPa</p>
+        <p><strong>Jarak Pandang:</strong> <span id="visibility"></span> km</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
